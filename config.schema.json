@@ -1,0 +1,16 @@
+{
+  "pluginAlias": "CorsAnywhere",
+  "pluginType": "platform",
+  "singular": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "CorsAnywhere",
+        "type": "string",
+        "required": true,
+        "default": "Cors Anywhere"
+      }
+    }
+  }
+}
