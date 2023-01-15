@@ -9,3 +9,5 @@ It is built entirely on top of the `cors-anywhere` npm package. Use their docs t
 https://www.npmjs.com/package/cors-anywhere
 
 The proxy is listening at `(your-homebridge-ip):5654`
+
+example: `http://homebridge.local:5654/http://homebridge.local/api/auth/settings`

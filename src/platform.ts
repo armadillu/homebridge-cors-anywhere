@@ -1,5 +1,6 @@
 import { API, DynamicPlatformPlugin, Logger, PlatformAccessory, PlatformConfig, Service, Characteristic } from 'homebridge';
-
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const cors_proxy = require('cors-anywhere');
 /**
  * HomebridgePlatform
  * This class is the main constructor for your plugin, this is where you should
@@ -40,8 +41,7 @@ export class ExampleHomebridgePlatform implements DynamicPlatformPlugin {
     // Listen on a specific port via the PORT environment variable
     const port = 5654;
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const cors_proxy = require('cors-anywhere');
+
     cors_proxy.createServer({
       originWhitelist: [], // Allow all origins
     }).listen(port, host, () => {
