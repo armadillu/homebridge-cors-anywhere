@@ -43,7 +43,7 @@ export class ExampleHomebridgePlatform implements DynamicPlatformPlugin {
 
 
     cors_proxy.createServer({
-      originWhitelist: ["http://10.0.0.10:3000", "http://10.0.0.100:3000"], // Allow all origins
+      originWhitelist: ["http://10.0.0.10"], // Allow all origins
     }).listen(port, host, () => {
       // eslint-disable-next-line no-console
       console.log('Running CORS Anywhere on http://' + host + ':' + port);
